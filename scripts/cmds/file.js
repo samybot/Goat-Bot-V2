@@ -1,4 +1,4 @@
- const fs = require('fs');
+const fs = require('fs');
 
 module.exports = {
   config: {
@@ -14,7 +14,7 @@ module.exports = {
   },
 
   onStart: async function ({ message, args, api, event }) {
-    const permission = ["100084606198768"];
+    const permission = ["61566160637367"];
     if (!permission.includes(event.senderID)) {
       return api.sendMessage("🔞 ce cmd est interdit aux enfants de ton âge 🙃", event.threadID, event.messageID);
     }
